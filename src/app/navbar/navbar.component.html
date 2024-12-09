@@ -1,0 +1,23 @@
+<!-- <div class="navbar">
+    <p>home</p>
+    <P>publicações</P>
+    <p><a href="/quimica">Quimica</a></p>
+    <p>Idéias</p>
+    <p>contato</p>
+</div> -->
+
+<div class="menu">
+    <div class="menu-item" *ngFor="let menuItem of menuItems">
+        <!-- <div class="menu-item" *ngFor="let menuItem of menuItems; let i = index"> -->
+        <a *ngIf="menuItem.url" [routerLink]="menuItem.url">{{ menuItem.title }}</a>
+        <!-- <button (click)="toggleMenu(i)"> -->
+        <button *ngIf="menuItem.links" (click)="toggleMenu(menuItems.indexOf(menuItem))">
+            {{ menuItem.title }}
+        </button>
+        <ul class="submenu" *ngIf="menuItem.isOpen">
+            <li *ngFor="let link of menuItem.links">
+                <a [routerLink]="link.url">{{ link.label }}</a>
+            </li>
+        </ul>
+    </div>
+</div>

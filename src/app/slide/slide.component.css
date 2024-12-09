@@ -1,0 +1,52 @@
+:host {
+    display: block;
+  }
+  
+  .slide-container {
+    position: relative;
+    width: 100vw; /* Ocupa toda a largura da tela */
+    height: 80vh; /* Opcional: ocupa toda a altura da tela */
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 100%; /* Faz a imagem ocupar toda a largura */
+    height: 100%; /* Faz a imagem ocupar toda a altura */
+    object-fit: cover; /* Garante que a imagem mantenha as proporções sem distorção */
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1.2rem;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev-btn {
+    left: 10px; /* Ajusta para borda esquerda */
+  }
+  
+  .next-btn {
+    right: 10px; /* Ajusta para borda direita */
+  }
+  

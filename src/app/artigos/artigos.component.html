@@ -1,0 +1,8 @@
+<div class="artigo">
+    <h1>{{ artigo.title }}</h1>
+    <p><strong>Por:</strong> {{ artigo.author }}</p>
+    <p><strong>Publicado em:</strong> {{ artigo.publishedDate | date }}</p>
+    <div class="content">
+        {{ artigo.content }}
+    </div>
+</div>

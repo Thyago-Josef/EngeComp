@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #080000;
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: inherit; /* Usa a cor herdada */
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  

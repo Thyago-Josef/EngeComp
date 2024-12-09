@@ -1,0 +1,8 @@
+<div class="artigo-list">
+    <h1 class="titulo">Lista de Artigos</h1>
+    <ul>
+        <li *ngFor="let artigo of artigos">
+            <a [routerLink]="['/fisica', artigo.id]">{{ artigo.title }}</a>
+        </li>
+    </ul>
+</div>

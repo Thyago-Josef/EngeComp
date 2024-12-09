@@ -1,0 +1,9 @@
+<div class="slide-container">
+    <div class="slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentIndex">
+        <img [src]="slide.img" [alt]="slide.title" />
+        <h2>{{ slide.title }}</h2>
+    </div>
+
+    <button class="prev-btn" (click)="previousSlide()">&#10094; Prev</button>
+    <button class="next-btn" (click)="nextSlide()">Next &#10095;</button>
+</div>

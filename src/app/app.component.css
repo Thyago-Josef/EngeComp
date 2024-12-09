@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o wrapper ocupe toda a altura da janela */
+  }
+  
+  .content {
+    flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+  }
+  
+ app-baseboard {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

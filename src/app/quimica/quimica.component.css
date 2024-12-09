@@ -1,0 +1,39 @@
+.artigo-list {
+        background-color: rgb(233, 237, 237);
+        width: 100vw; /* Largura total da tela */
+        height: 100vh; /* Altura total da tela */
+        margin: 0;
+        padding: 0;
+        display: flex; /* Usando Flexbox */
+        flex-direction: column; /* Alinha itens em uma coluna */
+        align-items: center; /* Centraliza horizontalmente o conteúdo */
+        justify-content: flex-start; /* Coloca o conteúdo no topo */
+    }
+    
+    h1 {
+        margin: 0; /* Remove margens externas padrão */
+        padding: 16px 0; /* Espaçamento interno opcional */
+        text-align: center; /* Centraliza o texto horizontalmente */
+    }
+
+    .artigo-list ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .artigo-list li {
+        margin: 10px 0;
+      }
+      
+      .artigo-list a {
+        text-decoration: none;
+        /* color: #007bff; */
+      }
+      
+      .artigo-list a:hover {
+        text-decoration: underline;
+      }
+      
+    
+
+

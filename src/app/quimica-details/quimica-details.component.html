@@ -1,0 +1,8 @@
+<div *ngIf="artigo" class="artigo-detail">
+    <h1>{{ artigo.title }}</h1>
+    <p><em>Por {{ artigo.author }} em {{ artigo.publishedDate | date:'longDate' }}</em></p>
+    <div class="content" [innerHTML]="artigo.content"></div>>
+
+
+    <a routerLink="/quimica" class="back-link">Voltar para a lista</a>
+</div>

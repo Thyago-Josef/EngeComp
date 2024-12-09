@@ -1,0 +1,100 @@
+/* Estilo geral do menu */
+.menu {
+    display: flex; /* Coloca os itens lado a lado */
+    /* justify-content: space-around; Espaçamento uniforme entre os itens */
+    background-color: #060606; /* Cor de fundo do menu */
+    color:#080808;
+    padding: 10px 0;
+    /* all: unset;  */
+
+    /* border: 1px solid #0b0b0b; */
+  }
+  
+  /* Estilo de cada item de menu */
+  .menu-item {
+    position: relative; /* Necessário para posicionar o submenu */
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1; /* Faz todos os itens terem o mesmo tamanho */
+    border-right: 1px solid #070707; /* Separador entre itens */
+    color:#f7f1f1;
+    background-color: #060606; /* Cor de fundo da caixa do título */
+  }
+  
+  .menu-item:last-child {
+    border-right: none; /* Remove o separador do último item */
+  }
+  
+  .menu-item:hover {
+    background-color: #050505; /* Cor de fundo ao passar o mouse */
+  }
+  
+  /* Submenu */
+  .submenu {
+    position: absolute; /* Posiciona abaixo do item */
+    top: 100%; /* Alinha ao fundo do item pai */
+    left: 0;
+    width: 100%; /* Submenu com largura igual ao item pai */
+    background-color: #090909;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Submenu oculto inicialmente */
+    border: 1px solid #000000;
+    z-index: 10; /* Garante que o submenu fique acima de outros elementos */
+  }
+  
+  .submenu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .submenu li a:hover {
+    background-color: #040404; /* Cor ao passar o mouse nos links */
+  }
+  
+  /* Exibe o submenu quando o item pai é hover */
+  .menu-item:hover .submenu {
+    display: block;
+  }
+
+  button {
+    all: unset; /* Remove todos os estilos padrão do botão */
+    width: 100%; /* Ocupa toda a largura do item do menu */
+    height: 100%; /* Ocupa toda a altura do item */
+    text-align: center;
+    padding: 10px 20px;
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    cursor: pointer;
+  }
+  
+  .menu-item a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Usa a cor herdada do pai */
+    padding: 10px 20px; /* Ajusta o espaçamento interno */
+    display: inline-block; /* Garante alinhamento semelhante aos botões */
+  }
+  
+  .menu-item a:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+    color: #000; /* Ajusta a cor do texto ao passar o mouse */
+  }
+  
+  .menu-item button {
+    background: none; /* Remove fundo padrão */
+    border: none; /* Remove borda padrão */
+    color: inherit; /* Usa a mesma cor do texto */
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .menu-item button:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+    color: #000; /* Ajusta a cor do texto ao passar o mouse */
+  }
+  

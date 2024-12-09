@@ -1,0 +1,15 @@
+<!-- <div class="teste">
+    <div>{{artigoDate.id}}</div>
+    <h1>{{ artigoData.title }}</h1>
+    <p><em>Por {{ artigoData.author }} em {{ artigoData.publishedDate | date:'longDate' }}</em></p>
+    <div [innerHTML]="artigoData.content"></div>
+</div> -->
+
+<div class="artigo-list">
+    <h1 class="titulo">Lista de Artigos</h1>
+    <ul>
+        <li *ngFor="let artigo of artigos">
+            <a [routerLink]="['/quimica', artigo.id]">{{ artigo.title }}</a>
+        </li>
+    </ul>
+</div>
