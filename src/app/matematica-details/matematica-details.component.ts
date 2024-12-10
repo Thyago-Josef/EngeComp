@@ -63,6 +63,81 @@ export class MatematicaDetailsComponent {
                 `,
       publishedDate: new Date(),
     },
+
+    {
+      id: 2,
+      title: 'Numeros primos',
+      author: 'Thyago',
+      content:
+        `
+        <div class="artigo">
+  <h1 class="titulo">Números Primos</h1>
+  <p class="descricao">
+    Números primos são aqueles que possuem exatamente dois divisores: 
+    <strong>1</strong> e ele mesmo. Em outras palavras, um número primo é maior 
+    que 1 e não pode ser dividido por nenhum outro número além de 1 e dele 
+    mesmo sem deixar resto.
+  </p>
+
+  <h2>Exemplos de números primos:</h2>
+  <ul>
+    <li>2 (único número primo par)</li>
+    <li>3</li>
+    <li>5</li>
+    <li>7</li>
+    <li>11</li>
+    <li>13</li>
+    <li>17</li>
+    <li>19</li>
+    <li>23</li>
+  </ul>
+
+  <h2>Como verificar se um número é primo:</h2>
+  <ol>
+    <li>Verifique se o número é maior que 1.</li>
+    <li>
+      Teste a divisibilidade de <code>n</code> pelos números de 2 até 
+      <code>√n</code>:
+      <ul>
+        <li>Se <code>n</code> for divisível por algum número nesse intervalo, ele não é primo.</li>
+        <li>Caso contrário, ele é primo.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Código em Java para verificar se um número é primo:</h2>
+  <pre>
+    <code>
+public class VerificarPrimo {
+    public static boolean ehPrimo(int numero) {
+        if (numero <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        int numero = 29;
+        if (ehPrimo(numero)) {
+            System.out.println(numero + " é primo.");
+        } else {
+            System.out.println(numero + " não é primo.");
+        }
+    }
+}
+    </code>
+  </pre>
+</div>
+ `,
+      publishedDate: new Date(),
+    }
+
+
   ];
 
   constructor(private route: ActivatedRoute) { }

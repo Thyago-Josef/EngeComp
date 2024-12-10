@@ -18,3 +18,18 @@
     text-decoration: underline;
   }
   
+  .historia-fisica {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .historia-fisica h1 {
+    color: #2c3e50;
+    text-align: center;
+  }
+  .historia-fisica ul {
+    padding-left: 20px;
+  }
+  .historia-fisica li {
+    margin-bottom: 10px;
+  }
+  

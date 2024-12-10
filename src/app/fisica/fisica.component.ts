@@ -11,7 +11,11 @@ export class FisicaComponent {
   artigos: ArtigoMenos[] = [
     {
       id: 1,
-      title: 'Medidas Fisicas',
+      title: 'Medidas Físicas',
+    },
+    {
+      id: 2,
+      title: 'História da Física',
     }
   ]
 }

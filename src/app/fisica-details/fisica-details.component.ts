@@ -177,6 +177,79 @@ export class FisicaDetailsComponent {
      `
             ,
             publishedDate: new Date(),
+        },
+
+        {
+            id: 2,
+            title: 'Historia da Física',
+            author: 'Thyago José',
+            content:
+
+                `
+            <div class="historia-fisica">
+  <h1>História da Física</h1>
+  <p>
+    A história da Física é uma fascinante jornada pelo desenvolvimento do entendimento humano sobre o universo. Ela é marcada por descobertas fundamentais e pela evolução de conceitos e métodos científicos que transformaram a nossa visão do mundo.
+  </p>
+  
+  <h2>Antiguidade</h2>
+  <ul>
+    <li>
+      <strong>Observações naturais:</strong> Civilizações antigas, como egípcios e babilônios, estudaram fenômenos como o movimento dos astros e marés, principalmente por razões práticas, como agricultura e navegação.
+    </li>
+    <li>
+      <strong>Filosofia natural na Grécia:</strong>
+      <ul>
+        <li><strong>Tales de Mileto (624–546 a.C.):</strong> Considerado o primeiro a buscar explicações naturais para os fenômenos.</li>
+        <li><strong>Aristóteles (384–322 a.C.):</strong> Propôs que o universo era composto por cinco elementos (terra, água, ar, fogo e éter).</li>
+        <li><strong>Arquimedes (287–212 a.C.):</strong> Pai da mecânica clássica, estudou alavancas, flutuação e princípios de estática.</li>
+      </ul>
+    </li>
+  </ul>
+  
+  <h2>Idade Média</h2>
+  <p>
+    A ciência foi influenciada por culturas islâmicas e medievais europeias:
+  </p>
+  <ul>
+    <li><strong>Alhazen (965–1040):</strong> Estudou a ótica e foi pioneiro no método experimental.</li>
+    <li>
+      <strong>Tradutores árabes:</strong> Preservaram e ampliaram conhecimentos gregos, introduzindo conceitos matemáticos e astronômicos na Europa.
+    </li>
+  </ul>
+  
+  <h2>Renascimento e Revolução Científica (século XVI e XVII)</h2>
+  <ul>
+    <li><strong>Copérnico (1473–1543):</strong> Propôs o modelo heliocêntrico, desafiando a visão geocêntrica de Ptolomeu.</li>
+    <li><strong>Galileu Galilei (1564–1642):</strong> Usou experimentos e telescópios para estudar o movimento e os corpos celestes.</li>
+    <li><strong>Isaac Newton (1643–1727):</strong> Introduziu as Leis de Newton e a Lei da Gravitação Universal.</li>
+  </ul>
+  
+  <h2>Séculos XVIII e XIX</h2>
+  <p>
+    Desenvolvimento da <strong>termodinâmica</strong>, avanços na <strong>eletricidade e magnetismo</strong> e surgimento da <strong>ótica moderna</strong>.
+  </p>
+  
+  <h2>Século XX</h2>
+  <ul>
+    <li><strong>Teoria da Relatividade (Albert Einstein):</strong> Reformulou o conceito de espaço-tempo e introduziu a equação <code>E=mc²</code>.</li>
+    <li><strong>Mecânica Quântica:</strong> Trouxe conceitos como dualidade onda-partícula e incerteza.</li>
+    <li>Desenvolvimento da <strong>física nuclear</strong> e da <strong>física de partículas</strong>.</li>
+  </ul>
+  
+  <h2>Século XXI</h2>
+  <p>
+    Exploração do <strong>cosmos</strong>, descoberta do <strong>Bóson de Higgs</strong> e busca por teorias unificadoras.
+  </p>
+</div>
+
+     `
+            ,
+
+            publishedDate: new Date(),
+
+
+
         }
     ];
     constructor(private route: ActivatedRoute) { }

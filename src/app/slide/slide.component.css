@@ -13,6 +13,11 @@
     display: none;
     text-align: center;
     height: 100%;
+    /* display: flex; */
+    /* flex-direction:row ; */
+    /* justify-content: center; */
+    /* align-items: center;
+    transition: transform 0.5s ease; */
   }
   
   .slide img {
@@ -24,6 +29,13 @@
   .slide.active {
     display: block;
   }
+
+  /* Títulos */
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+}
   
   button {
     position: absolute;
@@ -49,4 +61,29 @@
   .next-btn {
     right: 10px; /* Ajusta para borda direita */
   }
+  /* Estilos para telas pequenas */
+   @media (max-width: 768px) {
+    .slide-container {
+      padding: 0 10px;
+    }
   
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1em;
+    }
+  
+    .prev-btn, .next-btn {
+      padding: 8px;
+    }
+  }
+   

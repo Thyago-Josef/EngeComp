@@ -10,7 +10,11 @@ export class MatematicaComponent {
   artigos: ArtigoMenos[] = [
     {
       id: 1,
-      title: 'Matematica de que?',
+      title: 'Conjuntos numéricos',
+    },
+    {
+      id: 2,
+      title: 'Numeros primos',
     }
   ]
 }
