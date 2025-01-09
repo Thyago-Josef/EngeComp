@@ -13,7 +13,7 @@ export class MatematicaDetailsComponent {
   artigos: Artigo[] = [
     {
       id: 1,
-      title: 'Medidas Fisicas',
+      title: 'Conjuntos numéricos',
       author: 'Thyago',
       content:
         `

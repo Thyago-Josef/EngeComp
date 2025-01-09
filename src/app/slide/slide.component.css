@@ -3,11 +3,34 @@
   }
   
   .slide-container {
-    position: relative;
-    width: 100vw; /* Ocupa toda a largura da tela */
+    position: center;
+    width: 90vw; /* Ocupa toda a largura da tela */
     height: 80vh; /* Opcional: ocupa toda a altura da tela */
     overflow: hidden;
+    margin: 20px auto;
   }
+
+  .slide-containerr {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    width: 170vw; /* Ajusta a largura */
+    height: 80vh; /* Ajusta a altura */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide-containerr {
+  position: absolute;
+  top: 50%; /* Centraliza verticalmente */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
+  width: 90vw; 
+  height: 80vh;
+  overflow: hidden;
+}
+
+
   
   .slide {
     display: none;
