@@ -47,6 +47,7 @@
     width: 100%; /* Faz a imagem ocupar toda a largura */
     height: 100%; /* Faz a imagem ocupar toda a altura */
     object-fit: cover; /* Garante que a imagem mantenha as proporções sem distorção */
+    opacity: calc(0.5);
   }
   
   .slide.active {
